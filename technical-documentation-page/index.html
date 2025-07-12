@@ -1,0 +1,264 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Python Basics Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Python Documentation</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="#Introduction" class="nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+        </li>
+        <li>
+          <a href="#Hello_World" class="nav-link">Hello World</a>
+        </li>
+        <li>
+          <a href="#Variables_and_Data_Types" class="nav-link"
+            >Variables and Data Types</a
+          >
+        </li>
+        <li>
+          <a href="#Conditional_Statements" class="nav-link"
+            >Conditional Statements</a
+          >
+        </li>
+        <li>
+          <a href="#Loops" class="nav-link">Loops</a>
+        </li>
+        <li>
+          <a href="#Functions" class="nav-link">Functions</a>
+        </li>
+        <li>
+          <a href="#Error_Handling" class="nav-link">Error Handling</a>
+        </li>
+        <li>
+          <a href="#References" class="nav-link">References</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <p>
+          Python is a general-purpose programming language known for its
+          simplicity and readability. It was created by Guido van Rossum and
+          released in 1991.
+        </p>
+        <p>
+          Python’s design philosophy emphasizes code that reads like plain
+          English, which is why it's popular among beginners and experts alike.
+          It supports multiple programming paradigms such as procedural,
+          object-oriented, and functional programming.
+        </p>
+        <p>
+          Whether you're learning Python for data science, automation, or web
+          development, this guide provides a strong foundation to get you
+          started:
+        </p>
+        <ul>
+          <li>
+            Understand what Python is and why it's widely used across
+            industries.
+          </li>
+          <li>
+            Explore the syntax and semantics of the Python programming language.
+          </li>
+          <li>
+            Learn through concise explanations and hands-on code examples.
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Prerequisites">
+        <header>
+          <h2>Prerequisites</h2>
+        </header>
+          <p>
+            Before diving into this guide, it’s helpful to have a bit of prior
+            knowledge. While we aim to keep things simple, some concepts may
+            assume you're familiar with basic programming terminology.
+          </p>
+          <ul>
+            <li>
+              A general understanding of how code is written and executed (e.g.,
+              variables, functions).
+            </li>
+            <li>
+              Familiarity with any programming language (even HTML or
+              JavaScript) is beneficial but not required.
+            </li>
+          </ul>
+        
+      </section>
+
+      <section class="main-section" id="Hello_World">
+        <header>
+          <h2>Hello World</h2>
+        </header>
+          <p>
+            A "Hello, World!" program is typically used as a first step into any
+            new language. In Python, printing text to the screen is done with
+            the print() function. This program demonstrates how Python syntax is
+            minimal and human-readable.
+          </p>
+          <p>It serves two main purposes:</p>
+          <ul>
+            <li>Ensures your Python environment is set up correctly</li>
+            <li>Teaches you how output works in Python</li>
+          </ul>
+          <p>Print a message onto the screen:</p>
+          <code>print("Hello World")</code>
+      </section>
+
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header>
+          <h2>Variables and Data Types</h2>
+        </header>
+          <p>
+            Python does not require you to declare a variable’s type before
+            using it. When you assign a value to a variable, Python figures out
+            the type automatically. This makes development faster, but it also
+            means you need to be careful with dynamic typing.
+          </p>
+          <p>
+            Below are examples of how to create and use each of these data
+            types:
+          </p>
+          <pre><code># Integer
+age = 25
+print(age)</code></pre>
+
+          <pre><code># Float
+pi = 3.14159
+print(pi)</code></pre>
+
+          <pre><code># String
+greeting = "Hello, world!"
+print(greeting)</code></pre>
+
+          <pre><code># Boolean
+is_active = True
+print(is_active)</code></pre>
+      </section>
+
+      <section class="main-section" id="Conditional_Statements">
+        <header>
+          <h2>Conditional Statements</h2>
+        </header>
+          <p>
+            Python uses if, elif, and else to perform logic checks. Conditions
+            help control the flow of a program based on truth values.
+          </p>
+          <p>Examples of conditional statements:</p>
+          <pre><code>number = int(input('Enter a number: '))
+# check if number is greater than 0
+if number > 0:
+  print(f'{number} is a positive number.')
+
+print('A statement outside the if statement.')</code></pre>
+      </section>
+
+      <section class="main-section" id="Loops">
+        <header>
+          <h2>Loops</h2>
+        </header>
+          <p>Python has two main types of loops:</p>
+          <ul>
+            <li>
+              for loop: used to iterate over a sequence like a list or range of
+              numbers
+            </li>
+            <li>while loop: continues as long as a condition is true</li>
+          </ul>
+          <p>Below are examples of how loop:</p>
+          <pre><code>
+for val in sequence:
+    # run this code</code></pre>
+          <p>
+            The for loop iterates over the elements of sequence in order, and in
+            each iteration, the body of the loop is executed.
+          </p>
+          <p>
+            The loop ends after the body of the loop is executed for the last
+            item.
+          </p>
+          <p>
+            In Python, we use a while loop to repeat a block of code until a
+            certain condition is met. For example:
+          </p>
+          <pre><code>while condition:
+    # body of while loop</code></pre>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>
+          <h2>Functions</h2>
+        </header>
+          <p>
+            Functions are reusable blocks of code designed to perform a specific
+            task. They're defined using the def keyword.
+          </p>
+          <p>You can pass data, known as parameters, into a function.</p>
+          <p>In Python a function is defined using the def keyword:</p>
+          <pre><code>def my_function():
+  print("Hello from a function")</code></pre>
+          <p>
+            To call a function, use the function name followed by parenthesis:
+          </p>
+          <pre><code>def my_function():
+  print("Hello from a function")
+
+my_function()</code></pre>
+      </section>
+
+      <section class="main-section" id="Error_Handling">
+        <header>
+          <h2>Error Handling</h2>
+        </header>
+          <p>
+            Python provides structured error handling using try, except, else,
+            and finally blocks.
+          </p>
+          <p>
+            This allows you to catch exceptions (unexpected errors) and respond
+            gracefully, rather than crashing the entire program. Example:
+          </p>
+          <pre><code>#The try block will generate an exception, because x is not defined
+try:
+  print(x)
+except:
+  print("An exception occurred")</code></pre>
+      </section>
+
+      <section class="main-section" id="References">
+        <header>
+          <h2>References</h2>
+        </header>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/python/" target="_blank"
+                >W3Schools Python guide</a
+              >
+            </li>
+            <li>
+              <a href="https://realpython.com/" target="_blank"
+                >Real Python tutorials</a
+              >
+            </li>
+          </ul>
+      </section>
+    </main>
+  </body>
+</html>
